@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'reactnp-router-dom';
 import { Shield, MapPin, Bell, MessageSquare, Users, Navigation } from 'lucide-react';
 import SOSButton from '../components/SOSButton';
 

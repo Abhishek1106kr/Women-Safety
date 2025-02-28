@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Navigate } from 'react-router-dom';
-import { Shield, MapPin, Bell, Users, Clock, Navigation } from 'lucide-react';
+import { MapPin, Bell, Users, Clock, Navigation } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import SOSButton from '../components/SOSButton';
 import LocationTracker from '../components/LocationTracker';

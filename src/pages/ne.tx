@@ -1,7 +1,7 @@
-"use client"; 
+"use client"; // Ensure it's a client-side component
 
 import React, { useState, useEffect } from "react";
-import { GoogleMap, LoadScript, DirectionsRenderer } from "@react-google-maps/api";
+import { GoogleMap, LoadScript, DirectionsService, DirectionsRenderer } from "@react-google-maps/api";
 
 const mapContainerStyle = {
   width: "100%",
@@ -9,8 +9,8 @@ const mapContainerStyle = {
 };
 
 const defaultCenter = {
-  lat: 12.971599, // default location ==>  Bangalore 
-  lng: 77.594566,
+  lat: 28.7041, // Default location (e.g., New Delhi)
+  lng: 77.1025,
 };
 
 const SafeRoutes = () => {
@@ -60,7 +60,7 @@ const SafeRoutes = () => {
 
   // Mock AI function for safety score
   const calculateSafetyScore = (route) => {
-    return Math.random() * 100; 
+    return Math.random() * 100; // Replace with AI model integration
   };
 
   return (
